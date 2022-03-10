@@ -28,6 +28,7 @@ img {
     margin: 100px 0;
     border-radius: 30px;
     color: #fff;
+    position: relative;
 }
 
 .career__logo img {
@@ -64,13 +65,23 @@ img {
     color: #fff;
     text-decoration: none;
     text-transform: lowercase;
-    /* border-bottom: 1px solid; */
+    transition: all 0.3s ease-out 0s;
+}
+.career__list ul li:hover a {
+    color: darkslategrey;
 }
 
 .career__list ul li {
     margin-bottom: 5px;
     border-bottom: 1px solid #ddd;
     width: 100px;
+    transition: all 0.3s ease-out 0s;
+}
+.career__list ul li:hover {
+    border-bottom: 1px solid darkslategrey;
+}
+.career__list ul li:hover::marker {
+    color: darkslategrey;
 }
 
 .career__subscribe h4 {
@@ -82,6 +93,11 @@ img {
     box-sizing: border-box;
     cursor: pointer;
     border-radius: 10px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.career__subscribe h4:hover {
+    background: darkslategrey;
 }
 
 .career__subscribe h4 span {
@@ -92,4 +108,19 @@ img {
 .career__social ion-icon {
     margin-right: 14px;
     font-size: 24px;
+    transition: all 0.3s ease-out 0s;
+    cursor: pointer;
+}
+.career__social ion-icon:hover {
+    color: darkslategrey;
+}
+
+.author__bg img {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border-radius: 50%;
+    min-width: 600px;
+    border: 2px dotted #fff;
+    padding: 30px;
 }
