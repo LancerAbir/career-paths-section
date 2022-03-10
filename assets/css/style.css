@@ -121,6 +121,6 @@ img {
     right: 0;
     border-radius: 50%;
     min-width: 600px;
-    border: 2px dotted #fff;
+    /* border: 2px dotted #fff; */
     padding: 30px;
 }
